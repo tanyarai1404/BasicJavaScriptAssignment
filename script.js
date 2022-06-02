@@ -295,3 +295,21 @@ console.log("postfix evaluation: "+evaluatePostfix(exp));
 */
 
 
+// Question 14
+function leftRotate(arr, n, k){
+    let mod = k % n;
+ 
+    // Prints the rotated array from start position
+    for (let i = 0; i < n; i++)
+        console.log((arr[(mod + i) % n]) + " ");
+ 
+    console.log("\n");
+}
+ 
+
+let arr = [ 1,2,3,4,5,6,7 ];
+let n = arr.length;
+ 
+let k = 3;
+// Function Call
+leftRotate(arr, n, k);
